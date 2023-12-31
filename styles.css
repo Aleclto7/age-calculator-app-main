@@ -111,3 +111,17 @@ main {
 .calculator__result span {
     color: var(--purple);
 }
+@media (min-width: 600px) {
+    :root {
+        --lg: 6.5rem;
+    }
+    .calculator {
+        max-width: 600px;
+    }
+    .calculator__info {
+        padding: 4rem 3rem;
+    }
+    .calculator__result {
+        padding: 2rem 3rem;
+    }
+}
