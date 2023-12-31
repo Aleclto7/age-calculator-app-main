@@ -14,17 +14,25 @@
   <main>
     <article class="calculator">
       <div class="calculator__info">
-        <form>
-          <label for="day">Day</label>
-          <input type="number" name="day" placeholder="DD">
-          <label for="month">Month</label>
-          <input type="number" name="month" placeholder="MM">
-          <label for="number">Year</label>
-          <input type="number" name="year" placeholder="YYYY">
+        <form class="info__form">
+          <div class="form__day">
+            <label for="day">D A Y</label>
+            <input type="number" name="day" placeholder="DD">
+          </div>
+          <div class="form__month">
+            <label for="month">M O N T H</label>
+            <input type="number" name="month" placeholder="MM">
+          </div>
+          <div class="form__year">
+            <label for="number">Y E A R</label>
+            <input type="number" name="year" placeholder="YYYY">
+          </div>
         </form>
-        <svg></svg>
+        <button class="calculator__img">
+          <svg class="img_svg"></svg>
+        </button>
       </div>
-      <hr>
+      <hr class="calculator__divider">
       <div class="calculator__result">
         <h3><span>-- </span> years</h3>
         <h3><span>-- </span> months</h3>

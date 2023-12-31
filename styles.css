@@ -15,7 +15,99 @@
 --primary-font: 'Poppins', sans-serif;
 
 /* Font Size */
---sm: 1.4rem;
+--sm: 1.2rem;
 --md: 1.8rem;
---lg: 2.4rem;
+--lg: 5rem;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: var(--primary-font);
+}
+main {
+    background: var(--off-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.calculator {
+    position: relative;
+    background: var(--white);
+    width: 90%;
+    height: 500px;
+    border-radius: 2rem 2rem 10rem 2rem;
+}
+.calculator__info {
+    width: 100%;
+    max-width: 500px;
+    padding: 5rem 3rem;
+}
+.info__form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.info__form div {
+    display: flex;
+    flex-direction: column;
+}
+.info__form label {
+    color: var(--smokey-grey);
+    font-size: var(--sm);
+    padding-left: 0.2rem;
+}
+.info__form input {
+    font-size: var(--md);
+    width: 80%;
+    height: 50px;
+    border: solid 0.8px var(--smokey-grey);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.calculator__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--purple);
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border: none;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+.img_svg {
+    width: 23px;
+    height: 23px;
+    background-image: url('./assets/icon-arrow.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.calculator__divider {
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    border: solid var(--light-grey) 0.9px;
+    position: relative;
+}
+.calculator__result {
+    padding: 5rem 3rem;
+}
+.calculator__result h3 {
+    font-style: italic;
+    font-size: var(--lg);
+}
+.calculator__result span {
+    color: var(--purple);
 }
