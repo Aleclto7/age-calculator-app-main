@@ -121,7 +121,20 @@ main {
     .calculator__info {
         padding: 4rem 3rem;
     }
+    .calculator__img {
+        animation: move-box 0.3s linear 1 forwards;
+    }
     .calculator__result {
         padding: 2rem 3rem;
+    }
+}
+@keyframes move-box {
+    from {
+        top: 30%;
+        left: 50%;
+    }
+    to {
+        top: 25%;
+        left: 90%;
     }
 }
