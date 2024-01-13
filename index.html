@@ -17,28 +17,29 @@
         <form class="info__form">
           <div class="form__day">
             <label for="day">D A Y</label>
-            <input type="number" name="day" placeholder="DD">
+            <input type="number" name="day" id="day" placeholder="DD" min="1">
           </div>
           <div class="form__month">
             <label for="month">M O N T H</label>
-            <input type="number" name="month" placeholder="MM">
+            <input type="number" name="month" id="month" placeholder="MM" min="1" max="12">
           </div>
           <div class="form__year">
-            <label for="number">Y E A R</label>
-            <input type="number" name="year" placeholder="YYYY">
+            <label for="year">Y E A R</label>
+            <input type="number" name="year" id="year" placeholder="YYYY">
           </div>
+          <button class="calculator__img" type="button">
+            <svg class="img_svg"></svg>
+          </button>
         </form>
-        <button class="calculator__img">
-          <svg class="img_svg"></svg>
-        </button>
       </div>
       <hr class="calculator__divider">
       <div class="calculator__result">
-        <h3><span>-- </span> years</h3>
-        <h3><span>-- </span> months</h3>
-        <h3><span>-- </span> days</h3>
+        <h3><span class="result__year">-- </span> years</h3>
+        <h3><span class="result__month">-- </span> months</h3>
+        <h3><span class="result__day">-- </span> days</h3>
       </div>
     </article>
+    <script src="./main.js"></script>
   </main>
 </body>
 </html>
