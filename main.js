@@ -38,3 +38,12 @@ iYear.addEventListener('input', () => {
     }
 })
 
+// Print result on screen
+function result (vDay, vMonth, vYear) {
+    const htmlDay = document.querySelector('.result__day')
+    const htmlMonth = document.querySelector('.result__month')
+    const htmlYear = document.querySelector('.result__year')
+    htmlDay.innerHTML = `${vDay}`
+    htmlMonth.innerHTML = `${vMonth}`
+    htmlYear.innerHTML = `${vYear}`
+}
