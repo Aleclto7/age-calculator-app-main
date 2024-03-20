@@ -55,6 +55,11 @@ function result(vDay, vMonth, vYear) {
     htmlDay.innerHTML = `${vDay}`
     htmlMonth.innerHTML = `${vMonth}`
     htmlYear.innerHTML = `${vYear}`
+
+    htmlDay.classList.toggle('result-animated');
+    htmlMonth.classList.toggle('result-animated');
+    htmlYear.classList.toggle('result-animated');
+
 }
 // Error messages
 function invalidValues() {

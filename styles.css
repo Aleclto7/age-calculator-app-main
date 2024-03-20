@@ -130,6 +130,10 @@ main {
     font-weight: 100;
     color: var(--light-red);
 }
+.result-animated {
+    position: relative;
+    animation: print-result 0.5s linear forwards;
+}
 
 @media (min-width: 600px) {
     :root {
@@ -156,5 +160,15 @@ main {
     to {
         top: 25%;
         left: 90%;
+    }
+}
+@keyframes print-result {
+    from {
+        top: -1rem;
+        /* font-size: 0rem; */
+    }
+    to {
+        top: 0;
+        /* font-size: var(--lg); */
     }
 }
