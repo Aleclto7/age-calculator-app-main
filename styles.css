@@ -72,6 +72,7 @@ main {
     border: solid 0.8px var(--smokey-grey);
     border-radius: 0.5rem;
     padding: 1rem;
+    cursor: pointer;
 }
 .info__form input[type=number]::-webkit-inner-spin-button, .info__form input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
@@ -121,18 +122,23 @@ main {
 .inactive {
     display: none;
 }
-.error {
+.info__form .error {
     color: var(--light-red);
+    animation: opac 0.3s linear forwards;
 }
 .field__error {
     padding-left: 0.1rem;
     font-style: italic;
     font-weight: 100;
     color: var(--light-red);
+    animation: opac 0.3s linear forwards;
 }
 .result-animated {
     position: relative;
-    animation: print-result 0.5s linear forwards;
+    animation: print-result 0.3s linear forwards;
+}
+.calculator__img:hover {
+    background: var(--off-black);
 }
 
 @media (min-width: 600px) {
@@ -164,11 +170,18 @@ main {
 }
 @keyframes print-result {
     from {
-        top: -1rem;
+        top: -2rem;
         /* font-size: 0rem; */
     }
     to {
         top: 0;
         /* font-size: var(--lg); */
+    }
+}
+@keyframes opac {
+    0% {
+        opacity: 0%;
+    } 100% {
+    opacity: 100%;
     }
 }

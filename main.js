@@ -59,33 +59,41 @@ function result(vDay, vMonth, vYear) {
     htmlDay.classList.toggle('result-animated');
     htmlMonth.classList.toggle('result-animated');
     htmlYear.classList.toggle('result-animated');
-
 }
 // Error messages
 function invalidValues() {
     if (!iDay.checkValidity()) {
         iDay.nextElementSibling.classList.remove('inactive');
+        iDay.previousElementSibling.classList.add('error');
     } if (!iMonth.checkValidity()) {
         iMonth.nextElementSibling.classList.remove ('inactive')
+        iMonth.previousElementSibling.classList.add('error');
     } if (!iYear.checkValidity()) {
         iYear.nextElementSibling.classList.remove ('inactive')
+        iYear.previousElementSibling.classList.add('error');
     }
 }
 function validvalues() {
     if (iDay.checkValidity()) {
         iDay.nextElementSibling.classList.add('inactive');
+        iDay.previousElementSibling.classList.remove('error');
     } if (iMonth.checkValidity()) {
         iMonth.nextElementSibling.classList.add ('inactive')
+        iMonth.previousElementSibling.classList.remove('error');
     } if (iYear.checkValidity()) {
         iYear.nextElementSibling.classList.add ('inactive')
+        iYear.previousElementSibling.classList.remove('error');
     }
 }
 function emptyvalues() {
     if (iDay.value <= 0) {
         iDay.nextElementSibling.classList.remove('inactive')
+        iDay.previousElementSibling.classList.add('error');
     } if (iMonth.value <= 0) {
         iMonth.nextElementSibling.classList.remove ('inactive')
+        iMonth.previousElementSibling.classList.add('error');
     } if (iYear.value <= 0) {
         iYear.nextElementSibling.classList.remove ('inactive')
+        iYear.previousElementSibling.classList.add('error');
     }
 }
